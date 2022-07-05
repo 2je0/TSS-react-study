@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Layout from "./Layout/Layout";
 export const pages = ["introduction", "project", "blog", "practice"];
+
 function App() {
   return (
     <Layout>
