@@ -7,7 +7,7 @@ const ProjectList = () => {
     <div style={{ marginTop: "50px" }}>
       <Grid container spacing={4}>
         <Grid item xs={3}>
-          <ProjectCard />
+          <ProjectCard id='14' />
         </Grid>
         <Grid item xs={3}>
           <ProjectCard />
