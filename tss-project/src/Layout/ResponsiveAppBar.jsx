@@ -16,7 +16,10 @@ import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 import { pages } from "../App";
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = (props) => {
+  const toParent = (isdark) => {
+    props.themehandler(isdark);
+  };
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   //   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -136,7 +139,11 @@ const ResponsiveAppBar = () => {
               control={<Switch defaultChecked />}
               label='Dark mode'
               onChange={() => {
-                setIsDarkTheme((prev) => !prev);
+                setIsDarkTheme((prev) => {
+                  toParent(prev);
+                  return !prev;
+                });
+                // toParent(isdarkTheme);
               }}
             />
           </FormGroup>

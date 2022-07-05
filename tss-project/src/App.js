@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Layout from "./Layout/Layout";
+import Projectpage from "./pages/Projectpage";
 export const pages = ["introduction", "project", "blog", "practice"];
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
           home
         </Route>
         <Route path='/introduction'> introduction</Route>
-        <Route path='/project'> project</Route>
+        <Route path='/project'>
+          <Projectpage />
+        </Route>
         <Route path='/blog'> blog</Route>
         <Route path='/practice'> practice</Route>
       </Switch>
