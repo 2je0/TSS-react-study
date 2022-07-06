@@ -25,6 +25,7 @@ const ResponsiveAppBar = (props) => {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+    console.log(event.currentTarget);
   };
   //   const handleOpenUserMenu = (event) => {
   //     setAnchorElUser(event.currentTarget);
@@ -98,6 +99,7 @@ const ResponsiveAppBar = (props) => {
                   key={page}
                   onClick={() => {
                     history.push("/" + page);
+                    handleCloseNavMenu();
                   }}>
                   <Typography textAlign='center'>{page}</Typography>
                 </MenuItem>
