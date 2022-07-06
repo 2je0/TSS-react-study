@@ -14,7 +14,7 @@ const Projectpage = () => {
       <Route path={match.url + "/14"}>
         <p>14 content</p>
       </Route>
-      <Route path={`${match.url}/comments`}>
+      <Route path={`${match.url}/someurl`}>
         <p>some content</p>
       </Route>
     </Switch>

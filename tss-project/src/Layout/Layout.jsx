@@ -32,7 +32,7 @@ const Layout = (props) => {
     <LayoutContainer>
       <ThemeProvider theme={isDarkTheme}>
         <ResponsiveAppBar themehandler={changeTheme} />
-        <Container>{props.children}</Container>
+        <Container style={{ overflow: "hidden" }}>{props.children}</Container>
       </ThemeProvider>
     </LayoutContainer>
   );

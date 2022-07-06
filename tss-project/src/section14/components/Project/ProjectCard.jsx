@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
   const history = useHistory();
   const match = useRouteMatch();
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card zeroMinWidth>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
           {props.id || "id"}

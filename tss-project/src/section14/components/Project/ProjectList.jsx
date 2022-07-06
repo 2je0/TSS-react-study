@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectList = () => {
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ margin: "50px 0" }}>
       <Grid container spacing={4}>
         <Grid item xs={3}>
           <ProjectCard id='14' />
